@@ -9,6 +9,7 @@ package Main;
  * @author luiza
  */
 class EmailNotificationStrategy implements NotificationStrategy {
+    
 
     @Override
     public void send(Message message, String recipient) {
