@@ -12,7 +12,8 @@ class EmailNotificationStrategy implements NotificationStrategy {
 
     @Override
     public void send(Message message, String recipient) {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+        System.out.println("Enviando email para: "+ recipient +" com a mensagem: "+message.getContent());
+        
     }
     
 }

@@ -8,15 +8,16 @@ package Main;
  *
  * @author luiza
  */
-public class PromotionalMessage extends Message{
+public class PromotionalMessage extends Message {
 
     public PromotionalMessage(String content) {
         super(content);
     }
-    
+
     @Override
     public String format() {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+        return "[Promoção] -> " + content.toUpperCase();
+
     }
-    
+
 }
