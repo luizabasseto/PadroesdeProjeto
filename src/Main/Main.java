@@ -1,5 +1,7 @@
 package Main;
 
+import java.util.Scanner;
+
 
 public class Main {
     public static void main(String[] args) {
@@ -11,6 +13,9 @@ public class Main {
 
         System.out.println("--- Usando Estratégia de Email ---");
         notificationService.setStrategy(new EmailNotificationStrategy());
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Digite o tipo de mensagem:\n"
+                + "1- ");
         notificationService.sendNotification(welcomeMessage, "aluno@exemplo.com");
         notificationService.sendNotification(alertMessage, "admin@exemplo.com");
         notificationService.sendNotification(promoMessage, "cliente@exemplo.com");
