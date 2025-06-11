@@ -8,12 +8,14 @@ package Main;
  *
  * @author luiza
  */
+
+// Estratégia Concreta 1 (Strategy Pattern)
 class EmailNotificationStrategy implements NotificationStrategy {
     
 
     @Override
     public void send(Message message, String recipient) {
-        System.out.println("Enviando email para: "+ recipient +" com a mensagem: "+message.getContent());
+        System.out.println("Enviando email para: "+ recipient +" com a mensagem: "+message.getContent()+"\n");
         
     }
     

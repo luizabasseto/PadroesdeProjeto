@@ -8,6 +8,8 @@ package Main;
  *
  * @author luiza
  */
+
+// Contexto no Strategy Pattern - controla a estratégia atual e delega o envio
 public class NotificationService {
     private NotificationStrategy strategy;
 
@@ -17,10 +19,12 @@ public class NotificationService {
         this.strategy = strategy;
     }
 
+    
     public void setStrategy(NotificationStrategy strategy) {
         this.strategy = strategy;
     }
 
+      // Cliente que usa a estratégia para enviar a mensagem
     public void sendNotification(Message message, String recipient) {
         if (strategy == null) {
             System.out.println("Erro: Nenhuma estratégia de notificação foi definida.\n");

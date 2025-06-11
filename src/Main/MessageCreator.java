@@ -8,8 +8,6 @@ package Main;
  *
  * @author luiza
  */
-
-// Interface da estratégia de envio (Strategy Pattern)
-public interface NotificationStrategy {
-    void send(Message message, String recipient);
+public interface MessageCreator {
+    Message createMessage(String content);
 }

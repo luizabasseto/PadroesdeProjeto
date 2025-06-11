@@ -8,17 +8,10 @@ package Main;
  *
  * @author luiza
  */
-
-// Produto Concreto 2 (Factory - produto concreto)
-public class UrgentMessage extends Message {
-
-    public UrgentMessage(String content) {
-        super(content);
-    }
-
-    @Override
-    public String format() {
-       return "[URGENTE] -> " + content.toUpperCase();
-    }
+public class SimpleMessageCreator implements MessageCreator{
     
+    @Override
+    public Message createMessage(String content) {
+        return new SimpleMessage(content);
+    }
 }

@@ -8,6 +8,8 @@ package Main;
  *
  * @author luiza
  */
+
+// Classe abstrata que representa a mensagem (Produto abstrato na Factory)
 abstract class Message {
     protected String content;
 

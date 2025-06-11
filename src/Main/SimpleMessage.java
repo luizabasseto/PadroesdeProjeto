@@ -8,6 +8,8 @@ package Main;
  *
  * @author luiza
  */
+
+//Produto Concreto (Factory)
 public class SimpleMessage extends Message {
 
     public SimpleMessage(String content) {

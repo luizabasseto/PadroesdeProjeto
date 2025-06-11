@@ -8,6 +8,8 @@ package Main;
  *
  * @author luiza
  */
+
+// Simple Factory (não é um padrão GoF oficial, mas facilita criação centralizada de objetos)
 public class MessageFactory {
     public static Message createMessage(String type, String content) {
         if ("SIMPLE".equalsIgnoreCase(type)) {

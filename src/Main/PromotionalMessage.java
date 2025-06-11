@@ -8,6 +8,8 @@ package Main;
  *
  * @author luiza
  */
+
+// Produto Concreto 3 (Factory - produto concreto)
 public class PromotionalMessage extends Message {
 
     public PromotionalMessage(String content) {
